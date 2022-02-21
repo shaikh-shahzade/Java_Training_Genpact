@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card </title>
+<style>
+    .formBody {
+    max-width: 860px;
+    margin: 100px auto;
+    padding: 25px;
+    color: #4c4e56;
+}
+ 
+ .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+ .formPart {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    position: relative;
+}
+  .group {
+    float: left;
+    margin-bottom: 15px;
+}
+  .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+ .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+ .CVV {
+    width: 25%;
+}
+ #card-number-field {
+    width: 100%;
+}
+ #expiration-date {
+    width: 49%;
+}
+
+ #pay-button {
+    width: 100%;
+    margin-top: 25px;
+}
+  .btn {
+    width: 80%;
+    margin-left:10%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #0cac5c;
+    color: white;
+}
+ select {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+</style>
+    </head>
+
+<body>
+
+    
+    <div class="formBody">
+        <div class="heading">
+            <h1>Credit Card Form</h1>
+        </div>
+        <div class="formPart">
+            <form>
+                <div class="group owner">
+                    <label for="owner">Owner</label>
+                    <input type="text" class="form-control" id="owner">
+                </div>
+                <div class="group CVV">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv">
+                </div>
+                <div class="group" id="card-number-field">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber">
+                </div>
+                <div class="group" id="expiration-date">
+                    <label>Expiration Date</label>
+                    <select >
+                        <option value="01"  >January</option>
+                        <option value="02" selected>February </option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select>
+                        <option value="16"> 2016</option>
+                        <option value="17"> 2017</option>
+                        <option value="18"> 2018</option>
+                        <option value="19"> 2019</option>
+                        <option value="20"> 2020</option>
+                        <option value="21"> 2021</option>
+                        <option value="22" selected> 2022</option>
+                    </select>
+                </div>
+               
+                <div class="group" id="pay-button">
+                    <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
