@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+        <title>Login Form</title>
+        <script src="./javascipt/LogIn.js"></script>
+        <style>   
+            Body {  
+              font-family: Calibri, Helvetica, sans-serif;  
+            } 
+            .container {   
+            padding: 15px;   
+            background-color: rgb(212, 158, 174);  
+    }   
+    input[type=text], input[type=password] {   
+        width: 40%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(19, 97, 97);   
+        box-sizing: border-box;   
+    }   
+            </style>
+   </head>
+    <body>
+        <form>  
+            <div class="container"> 
+                 <label>Username : </label>   
+                <input type="text" placeholder="Enter Username" id="username" required>  
+                <div class="aa">
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" id="password" required>  
+                </div>
+                <button  onclick="validate()" type="button">Login</button>   
+                 
+                <button type="button" class="cancelbtn"> Cancel</button>   
+               
+            </div>   
+        </form>     
+
+
+    </body>
+</html>

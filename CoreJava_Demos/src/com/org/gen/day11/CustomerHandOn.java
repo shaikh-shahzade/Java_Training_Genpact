@@ -23,21 +23,8 @@ public class CustomerHandOn {
 			con = DriverManager.getConnection(JdbcURL, Username, password);
 			System.out.println("Connection is successful!!!!!!");
 			
-			System.out.println("Enter Number of customers to add: ");
-			int t = sc.nextInt();
 			
-			for(int i =0 ; i<t ; i++)
-			{
-				System.out.println("Enter Account no.: ");
-				int accNum = sc.nextInt();
-				System.out.println("Enter Name: ");
-				String name = sc.next();
-				System.out.println("Enter Balance: ");
-				int bal = sc.nextInt();
-				System.out.println("Enter Phone Number: ");
-				String phn = sc.next();
-				AddCustomer.addCustomer(con, accNum, name, bal, phn);
-			}
+		
 			
 			
 			System.out.println("Enter Account no.: ");
