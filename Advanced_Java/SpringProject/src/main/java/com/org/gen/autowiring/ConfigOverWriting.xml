@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+               http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+  
+  <context:annotation-config />
+  
+               
+     <context:annotation-config/>
+  
+  
+  <!-- For XML AutoWiring -->
+  <bean class="com.org.gen.autowiring.Student" name="student" >
+  <property name="name">
+  	<value>Alan</value>
+  </property>
+   <property name ="rollno">
+  	<value type="int">12</value>
+  </property>
+  
+  </bean>
+  
+  <bean class="com.org.gen.autowiring.College" name="College" autowire="byName" /> 
+  
+  <!-- For Annotation AutoWiring -->
+  <bean class="com.org.gen.autowiring.Student2" name="student2" >
+  <property name="name">
+  	<value>Alan</value>
+  </property>
+   <property name ="rollno">
+  	<value type="int">12</value>
+  </property>
+  
+  </bean>
+  
+  <bean class="com.org.gen.autowiring.College2" name="College2"  /> 
+  
+  
+    </beans>
